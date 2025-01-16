@@ -1,0 +1,17 @@
+meta {
+  name: set_score
+  type: http
+  seq: 9
+}
+
+put {
+  url: http://127.0.0.1:50006/scores/brains
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "score": 10
+  }
+}

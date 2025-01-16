@@ -1,0 +1,19 @@
+meta {
+  name: create_student
+  type: http
+  seq: 13
+}
+
+post {
+  url: http://127.0.0.1:50005/students
+  body: json
+  auth: none
+}
+
+body:json {
+   {
+     "id": "437814",
+     "surname": "Rossi",
+     "name": "Mario"
+   }
+}

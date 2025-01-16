@@ -1,0 +1,19 @@
+meta {
+  name: add_item
+  type: http
+  seq: 10
+}
+
+post {
+  url: http://127.0.0.1:50000/inventory
+  body: json
+  auth: none
+}
+
+body:json {
+   { 
+    "code" : "j8732a32", 
+    "description" : "Yogurt", 
+    "quantity" : 77
+   }
+}

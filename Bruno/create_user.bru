@@ -1,0 +1,20 @@
+meta {
+  name: create_user
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://127.0.0.1:50006/users
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "nickname": "brains",
+      "email": "theGOAT@email.com",
+      "name": "Rick",
+      "surname": "Jonas"
+  }
+}

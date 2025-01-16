@@ -9,13 +9,11 @@ def love():
     affinity = (hash(lover1) + hash(lover2))%101
 
     if not lover1 or not lover2:
-        return jsonify({
-            "error bad request": 400
-        })
-
+        return jsonify({'error': 'Missing required parameter'}), 400
+    
     response = {'lover1':lover1, 'lover2':lover2, 'affinity': affinity}
-    return jsonify(response)
+    return jsonify(response), 200
     
 
 if __name__ == '__main__':
-    app.run(port=50000)
+    app.run(port=50002)

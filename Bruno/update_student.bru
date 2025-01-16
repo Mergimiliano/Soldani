@@ -1,0 +1,16 @@
+meta {
+  name: update_student
+  type: http
+  seq: 12
+}
+
+put {
+  url: http://127.0.0.1:50005/students/437814?course=italian&grade=6
+  body: json
+  auth: none
+}
+
+params:query {
+  course: italian
+  grade: 6
+}
